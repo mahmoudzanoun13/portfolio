@@ -122,7 +122,7 @@ export const Contact = () => {
                           }
                         />
                       </Col>
-                      <Col size={12} className="px-1">
+                      <Col size={12} sm={6} className="px-1">
                         <textarea
                           rows="6"
                           value={formDetails.message}

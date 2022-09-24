@@ -311,6 +311,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
 }
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 45px;
+  }
+}
 .banner p {
   color: #b8b8b8;
   font-size: 18px;
@@ -727,6 +732,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .contact form button {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 @media (hover: hover) {
   .contact form button {
