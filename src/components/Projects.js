@@ -9,12 +9,19 @@ import projImg6 from "../assets/img/calculatorproject.jpg";
 import projImg7 from "../assets/img/robofriendsproject.jpg";
 import projImg8 from "../assets/img/redstoreproject.jpg";
 import projImg9 from "../assets/img/cardsproject.jpg";
+import projImg10 from "../assets/img/responsive-startup-website.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const UIProjects = [
+    {
+      title: "Responsive Startup Website",
+      description: "Design",
+      imgUrl: projImg10,
+      github: "https://github.com/mahmoudzanoun13/responsive-startup-website",
+    },
     {
       title: "Food Recipe Box",
       description: "Design & Development",
@@ -158,7 +165,11 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt="color sharp"></img>
+      <img
+        className="background-image-right"
+        src={colorSharp2}
+        alt="color sharp"
+      ></img>
     </section>
   );
 };
