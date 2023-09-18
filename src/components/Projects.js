@@ -1,15 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/recipe-box-project.jpg";
-import projImg2 from "../assets/img/crazydolphin.jpg";
+import projImg0 from "../assets/img/srena.png";
+import projImg1 from "../assets/img/responsive-startup-website.png";
+import projImg2 from "../assets/img/recipe-box-project.jpg";
 import projImg3 from "../assets/img/smartbrainproject.jpg";
-import projImg4 from "../assets/img/instagramproject.jpeg";
-import projImg5 from "../assets/img/eye4mediaproject.png";
-import projImg6 from "../assets/img/calculatorproject.jpg";
-import projImg7 from "../assets/img/robofriendsproject.jpg";
-import projImg8 from "../assets/img/redstoreproject.jpg";
-import projImg9 from "../assets/img/cardsproject.jpg";
-import projImg10 from "../assets/img/responsive-startup-website.png";
+import projImg4 from "../assets/img/crazydolphin.jpg";
+import projImg5 from "../assets/img/redstoreproject.jpg";
+import projImg6 from "../assets/img/instagramproject.jpeg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -17,64 +14,40 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const UIProjects = [
     {
+      title: "Srena",
+      description: "Design",
+      imgUrl: projImg0,
+      github: "https://github.com/mahmoudzanoun13/srena",
+    },
+    {
       title: "Responsive Startup Website",
       description: "Design",
-      imgUrl: projImg10,
+      imgUrl: projImg1,
       github: "https://github.com/mahmoudzanoun13/responsive-startup-website",
     },
     {
       title: "Food Recipe Box",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: projImg2,
       github: "https://github.com/mahmoudzanoun13/recipe-box",
     },
     {
       title: "Crazy Dolphin",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: projImg3,
       github: "https://github.com/mahmoudzanoun13/crazydolphin",
     },
     {
       title: "Smart Brain",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: projImg4,
       github: "https://github.com/mahmoudzanoun13/smart-brain",
     },
     {
-      title: "Instagram Clone",
-      description: "Design & Development",
-      imgUrl: projImg4,
-      github: "https://github.com/mahmoudzanoun13/instagram-clone",
-    },
-    {
-      title: "Eye4Media",
-      description: "Design & Development",
-      imgUrl: projImg5,
-      github: "https://github.com/mahmoudzanoun13/eye4media",
-    },
-    {
-      title: "Calculator App",
-      description: "Design & Development",
-      imgUrl: projImg6,
-      github: "https://github.com/mahmoudzanoun13/calculator-app",
-    },
-    {
-      title: "Robo Friends",
-      description: "Design & Development",
-      imgUrl: projImg7,
-      github: "https://github.com/mahmoudzanoun13/robofriends",
-    },
-    {
       title: "Red Store",
-      description: "Design & Development",
-      imgUrl: projImg8,
+      description: "Design",
+      imgUrl: projImg5,
       github: "https://github.com/mahmoudzanoun13/redstore",
-    },
-    {
-      title: "Four Cards",
-      description: "Design & Development",
-      imgUrl: projImg9,
-      github: "https://github.com/mahmoudzanoun13/four-card",
     },
   ];
 
@@ -82,13 +55,13 @@ export const Projects = () => {
     {
       title: "Smart Brain",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: projImg4,
       github: "https://github.com/mahmoudzanoun13/smart-brain",
     },
     {
       title: "Instagram Clone",
       description: "Design & Development",
-      imgUrl: projImg4,
+      imgUrl: projImg6,
       github: "https://github.com/mahmoudzanoun13/instagram-clone",
     },
   ];

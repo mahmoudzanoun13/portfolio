@@ -34,15 +34,14 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                JavaScript, ECMAScript(ES6), HTML5, CSS3, SCSS, Reactjs, Redux,
-                BootStrap, Tailwindcss, Async, Styled-Component, Context,
-                RESTFUL APIs, Nodejs, Expressjs, PostgreSQL, AJAX, JSON,
-                Postman, Npm, Yarn, Webpack, Modules, TDD, Unit Testing,
-                Integration Tests, End TO End Tests, Jest, CI/CD, Git, Github,
-                Firebase, Heroku, Netlify, ComputerScience,
-                InformationTechnology, ProblemSolving.
+                JavaScript, ECMAScript(ES6), HTML5, CSS3, SCSS, Reactjs,
+                ContextAPI, Redux, RESTFUL APIs, Axios, MUI, BootStrap,
+                Tailwindcss, Styled-Component, Nodejs, Expressjs, PostgreSQL,
+                AJAX, JSON, Postman, Npm, Yarn, Webpack, TDD, Unit Testing,
+                Integration Tests, End To End Tests, Jest, CI/CD, Git, GitHub,
+                Firebase, Heroku, Netlify, Vercel, Problem Solving.
                 <br />
-                WorkHard, TimeManagement, Leadership, WorkUnderPressure,
+                Work Hard, Time Management, Leadership, Work Under Pressure,
                 Communication, Patient, Ambition.
               </p>
               <Carousel
@@ -52,15 +51,15 @@ export const Skills = () => {
               >
                 <div className="item">
                   <img src={meter1} alt="95 percent" />
-                  <h5>Front End Developer</h5>
+                  <h5>Frontend Developer</h5>
                 </div>
                 <div className="item">
                   <img src={meter2} alt="80 percent" />
-                  <h5>Web Design</h5>
+                  <h5>Web Designer</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="90 percent" />
-                  <h5>Back End Developer</h5>
+                  <h5>Backend Developer</h5>
                 </div>
               </Carousel>
             </div>
