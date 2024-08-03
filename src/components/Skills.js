@@ -34,8 +34,8 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                JavaScript, ECMAScript(ES6), HTML5, CSS3, SCSS, Reactjs,
-                ContextAPI, Redux, RESTFUL APIs, Axios, MUI, BootStrap,
+                JavaScript, ES6, TypeScript, HTML5, CSS3, SCSS, Reactjs,
+                ContextAPI, Redux, Nextjs, RESTFUL APIs, Axios, MUI, BootStrap,
                 Tailwindcss, Styled-Component, Nodejs, Expressjs, PostgreSQL,
                 AJAX, JSON, Postman, Npm, Yarn, Webpack, TDD, Unit Testing,
                 Integration Tests, End To End Tests, Jest, CI/CD, Git, GitHub,

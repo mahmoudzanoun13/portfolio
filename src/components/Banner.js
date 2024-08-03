@@ -82,11 +82,6 @@ export const Banner = () => {
                     serve millions of people with awesome UI/UX and responsive
                     apps to help in their life and make them more efficient and
                     easier.
-                    <br />
-                    <br />
-                    And here is some of my skills: HTML, CSS, JavaScript,
-                    Reactjs, Nodejs, Expressjs, PostgreSQl, Postman, Git, GitHub
-                    and Heroku.
                   </p>
                   <a href="#connect">
                     <button>

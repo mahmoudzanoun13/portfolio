@@ -7,12 +7,19 @@ import projImg3 from "../assets/img/smartbrainproject.jpg";
 import projImg4 from "../assets/img/crazydolphin.jpg";
 import projImg5 from "../assets/img/redstoreproject.jpg";
 import projImg6 from "../assets/img/instagramproject.jpeg";
+import projImg7 from "../assets/img/adeptiproject.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const UIProjects = [
+    {
+      title: "Adepti",
+      description: "Design & Development",
+      imgUrl: projImg7,
+      github: "https://www.adepti.co",
+    },
     {
       title: "Srena",
       description: "Design",
@@ -52,6 +59,12 @@ export const Projects = () => {
   ];
 
   const fullProjects = [
+    {
+      title: "Adepti",
+      description: "Design & Development",
+      imgUrl: projImg7,
+      github: "https://www.adepti.co",
+    },
     {
       title: "Smart Brain",
       description: "Design & Development",
