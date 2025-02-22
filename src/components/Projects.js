@@ -3,8 +3,8 @@ import { ProjectCard } from "./ProjectCard";
 import projImg0 from "../assets/img/srena.png";
 import projImg1 from "../assets/img/responsive-startup-website.png";
 import projImg2 from "../assets/img/recipe-box-project.jpg";
-import projImg3 from "../assets/img/smartbrainproject.jpg";
-import projImg4 from "../assets/img/crazydolphin.jpg";
+import projImg3 from "../assets/img/crazydolphin.jpg";
+import projImg4 from "../assets/img/smartbrainproject.jpg";
 import projImg5 from "../assets/img/redstoreproject.jpg";
 import projImg6 from "../assets/img/instagramproject.jpeg";
 import projImg7 from "../assets/img/adeptiproject.png";
@@ -24,7 +24,7 @@ export const Projects = () => {
       title: "Srena",
       description: "Design",
       imgUrl: projImg0,
-      github: "https://github.com/mahmoudzanoun13/srena",
+      github: "https://www.srena.com",
     },
     {
       title: "Responsive Startup Website",
@@ -104,14 +104,14 @@ export const Projects = () => {
                       className="nav-pills mb-5 justify-content-center align-items-center"
                       id="pills-tab"
                     >
-                      <Nav.Item>
-                        <Nav.Link eventKey="first">Front End</Nav.Link>
+                      <Nav.Item role="button">
+                        <Nav.Link eventKey="first">Frontend</Nav.Link>
                       </Nav.Item>
-                      <Nav.Item>
+                      <Nav.Item role="button">
                         <Nav.Link eventKey="second">Full Stack</Nav.Link>
                       </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third">Back End</Nav.Link>
+                      <Nav.Item role="button">
+                        <Nav.Link eventKey="third">Backend</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content

@@ -1,6 +1,4 @@
 import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
@@ -34,15 +32,14 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                JavaScript, ES6, TypeScript, HTML5, CSS3, SCSS, Reactjs,
-                ContextAPI, Redux, Nextjs, RESTFUL APIs, Axios, MUI, BootStrap,
-                Tailwindcss, Styled-Component, Nodejs, Expressjs, PostgreSQL,
-                AJAX, JSON, Postman, Npm, Yarn, Webpack, TDD, Unit Testing,
-                Integration Tests, End To End Tests, Jest, CI/CD, Git, GitHub,
-                Firebase, Heroku, Netlify, Vercel, Problem Solving.
+                JavaScript, ES6, TypeScript, Reactjs, Nextjs, Redux, React
+                query, RESTFUL APIs, Axios, MUI, Tailwindcss, Styled-Component,
+                BootStrap, HTML5, CSS3, SCSS, Postman, Npm, Yarn, Webpack, TDD,
+                Unit Testing, Integration Tests, End To End Tests, Jest, CI/CD,
+                Git, GitHub.
                 <br />
-                Work Hard, Time Management, Leadership, Work Under Pressure,
-                Communication, Patient, Ambition.
+                Problem Solving, Work Hard, Time Management, Leadership, Work
+                Under Pressure, Communication.
               </p>
               <Carousel
                 responsive={responsive}
@@ -51,15 +48,15 @@ export const Skills = () => {
               >
                 <div className="item">
                   <img src={meter1} alt="95 percent" />
-                  <h5>Frontend Developer</h5>
+                  <h5>Frontend Web Developer</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="80 percent" />
-                  <h5>Web Designer</h5>
+                  <img src={meter1} alt="95 percent" />
+                  <h5>Frontend Web Developer</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="90 percent" />
-                  <h5>Backend Developer</h5>
+                  <img src={meter1} alt="95 percent" />
+                  <h5>Frontend Web Developer</h5>
                 </div>
               </Carousel>
             </div>
