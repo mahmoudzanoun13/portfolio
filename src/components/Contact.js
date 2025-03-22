@@ -14,22 +14,57 @@ export const Contact = () => {
     message: "",
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
+  const [formErrors, setFormErrors] = useState({});
   const [submitting, setSubmitting] = useState(false);
   const [status, setStatus] = useState({});
   const { firstName, lastName, email, phone, message } = formDetails;
+
+  const validateForm = () => {
+    const errors = {};
+
+    if (!firstName.trim()) errors.firstName = "First name is required";
+    if (!lastName.trim()) errors.lastName = "Last name is required";
+
+    if (!email.trim()) {
+      errors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      errors.email = "Email is invalid";
+    }
+
+    if (phone.trim() && !/^\+?[\d\s-]{10,}$/.test(phone)) {
+      errors.phone = "Please enter a valid phone number";
+    }
+
+    if (!message.trim()) errors.message = "Message is required";
+
+    return errors;
+  };
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
       ...formDetails,
       [category]: value,
     });
+    // Clear error when user starts typing
+    if (formErrors[category]) {
+      setFormErrors({
+        ...formErrors,
+        [category]: "",
+      });
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitting(true);
-    await postSubmission();
-    setSubmitting(false);
+    const errors = validateForm();
+
+    if (Object.keys(errors).length === 0) {
+      setSubmitting(true);
+      await postSubmission();
+      setSubmitting(false);
+    } else {
+      setFormErrors(errors);
+    }
   };
 
   const postSubmission = async () => {
@@ -91,7 +126,13 @@ export const Contact = () => {
                             onFormUpdate("firstName", e.target.value)
                           }
                         />
+                        {formErrors.firstName && (
+                          <p className="error-message text-danger">
+                            {formErrors.firstName}
+                          </p>
+                        )}
                       </Col>
+                      {/* Add similar error messages for other fields */}
                       <Col size={12} sm={6} className="px-1">
                         <input
                           type="text"
@@ -101,6 +142,11 @@ export const Contact = () => {
                             onFormUpdate("lastName", e.target.value)
                           }
                         />
+                        {formErrors.lastName && (
+                          <p className="error-message text-danger">
+                            {formErrors.lastName}
+                          </p>
+                        )}
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input
@@ -111,6 +157,11 @@ export const Contact = () => {
                             onFormUpdate("email", e.target.value)
                           }
                         />
+                        {formErrors.email && (
+                          <p className="error-message text-danger">
+                            {formErrors.email}
+                          </p>
+                        )}
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input
@@ -121,8 +172,13 @@ export const Contact = () => {
                             onFormUpdate("phone", e.target.value)
                           }
                         />
+                        {formErrors.phone && (
+                          <p className="error-message text-danger">
+                            {formErrors.phone}
+                          </p>
+                        )}
                       </Col>
-                      <Col size={12} sm={6} className="px-1">
+                      <Col size={12} className="px-1">
                         <textarea
                           rows="6"
                           value={formDetails.message}
@@ -131,11 +187,16 @@ export const Contact = () => {
                             onFormUpdate("message", e.target.value)
                           }
                         ></textarea>
+                        {formErrors.message && (
+                          <p className="error-message text-danger">
+                            {formErrors.message}
+                          </p>
+                        )}
                         <button type="submit">
                           <span>{submitting ? "Sending..." : "Send"}</span>
                         </button>
                       </Col>
-                      {status && (
+                      {status.text && (
                         <Col>
                           <p className={status.class}>{status.text}</p>
                         </Col>
