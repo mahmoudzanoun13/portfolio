@@ -1,5 +1,5 @@
 import personalPhoto from "../assets/img/myphoto.jpg";
-import resume from "../assets/Mahmoud-Zanoun-FlowCV-Resume-20250223.pdf";
+import resume from "../assets/Mahmoud-Zanoun-FlowCV-Resume-2026-01-07.pdf";
 
 export const Hero = () => {
   return (
