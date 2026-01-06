@@ -32,10 +32,10 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                JavaScript, ES6, TypeScript, Reactjs, Nextjs, Redux, React
+                JavaScript, ES6, TypeScript, Reactjs, Nextjs, Redux, Zustand, React
                 query, RESTFUL APIs, Axios, MUI, Tailwindcss, Styled-Component,
-                BootStrap, HTML5, CSS3, SCSS, Postman, Npm, Yarn, Webpack, TDD,
-                Unit Testing, Integration Tests, End To End Tests, Jest, CI/CD,
+                BootStrap, HTML5, CSS3, SCSS, Postman, Npm, Yarn, Pnpm, Webpack, TDD,
+                Unit Testing, Integration Tests, End To End Tests, Jest, Vitest, CI/CD,
                 Git, GitHub.
                 <br />
                 Problem Solving, Work Hard, Time Management, Leadership, Work
