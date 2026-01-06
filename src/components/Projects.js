@@ -1,13 +1,9 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg0 from "../assets/img/srena.png";
-import projImg1 from "../assets/img/responsive-startup-website.png";
-import projImg2 from "../assets/img/recipe-box-project.jpg";
-import projImg3 from "../assets/img/crazydolphin.jpg";
-import projImg4 from "../assets/img/smartbrainproject.jpg";
-import projImg5 from "../assets/img/redstoreproject.jpg";
-import projImg6 from "../assets/img/instagramproject.jpeg";
-import projImg7 from "../assets/img/adeptiproject.png";
+import adepti from "../assets/img/adeptiproject.png";
+import taheiya from "../assets/img/taheiya.png";
+import scienceToonz from "../assets/img/science-toonz.png";
+import crazyDolphin from "../assets/img/crazydolphin.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -17,67 +13,30 @@ export const Projects = () => {
     {
       title: "Adepti",
       description: "Design & Development",
-      imgUrl: projImg7,
+      imgUrl: adepti,
       github: "https://www.adepti.co",
     },
     {
-      title: "Srena",
-      description: "Design",
-      imgUrl: projImg0,
-      github: "https://www.srena.com",
-    },
-    {
-      title: "Responsive Startup Website",
-      description: "Design",
-      imgUrl: projImg1,
-      github: "https://github.com/mahmoudzanoun13/responsive-startup-website",
-    },
-    {
-      title: "Food Recipe Box",
+      title: "Taheiya",
       description: "Design & Development",
-      imgUrl: projImg2,
-      github: "https://github.com/mahmoudzanoun13/recipe-box",
+      imgUrl: taheiya,
+      github: "https://mohaseb.sa",
+    },
+    {
+      title: "Science Toonz",
+      description: "Design & Development",
+      imgUrl: scienceToonz,
+      github: "https://sciencetoonz.com",
     },
     {
       title: "Crazy Dolphin",
       description: "Design & Development",
-      imgUrl: projImg3,
-      github: "https://github.com/mahmoudzanoun13/crazydolphin",
-    },
-    {
-      title: "Smart Brain",
-      description: "Design & Development",
-      imgUrl: projImg4,
-      github: "https://github.com/mahmoudzanoun13/smart-brain",
-    },
-    {
-      title: "Red Store",
-      description: "Design",
-      imgUrl: projImg5,
-      github: "https://github.com/mahmoudzanoun13/redstore",
+      imgUrl: crazyDolphin,
+      github: "https://mahmoudzanoun13.github.io/crazydolphin",
     },
   ];
 
-  const fullProjects = [
-    {
-      title: "Adepti",
-      description: "Design & Development",
-      imgUrl: projImg7,
-      github: "https://www.adepti.co",
-    },
-    {
-      title: "Smart Brain",
-      description: "Design & Development",
-      imgUrl: projImg4,
-      github: "https://github.com/mahmoudzanoun13/smart-brain",
-    },
-    {
-      title: "Instagram Clone",
-      description: "Design & Development",
-      imgUrl: projImg6,
-      github: "https://github.com/mahmoudzanoun13/instagram-clone",
-    },
-  ];
+  const fullProjects = [];
 
   return (
     <section className="project" id="projects">
