@@ -33,7 +33,7 @@ export const Skills = () => {
               <h2>Skills</h2>
               <p>
                 JavaScript, ES6, TypeScript, Reactjs, Nextjs, Redux, Zustand, React
-                query, RESTFUL APIs, Axios, MUI, Tailwindcss, Styled-Component,
+                query, RESTFUL APIs, Axios, AI Tools, Kubb, MUI, Tailwindcss, Styled-Component,
                 BootStrap, HTML5, CSS3, SCSS, Postman, Npm, Yarn, Pnpm, Webpack, TDD,
                 Unit Testing, Integration Tests, End To End Tests, Jest, Vitest, CI/CD,
                 Git, GitHub.
