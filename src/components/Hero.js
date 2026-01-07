@@ -13,12 +13,14 @@ export const Hero = () => {
           <div className="col-h">
             <div className="text-wrapper-h">
               <p className="text-h mb-2-h">
-                I'm Frontend Web Developer. Possess strong leadership and
-                communication skills with fluency in Arabic and English. I'm a
-                problem solver, hard worker, and passionate about learning the
-                latest technologies. I'm seeking to create web apps that serve
-                millions of people with awesome UI/UX and responsive apps to
-                help in their life and make them more efficient and easier.
+                I'm a Frontend Web Developer with 3 years of hands-on experience building modern web
+                applications using React and Next.js. I leverage AI tools to enhance productivity and
+                streamline development workflows. I possess strong leadership and communication skills
+                with fluency in Arabic and English. As a problem solver and dedicated professional, I'm
+                passionate about staying current with the latest frontend technologies and best practices.
+                I'm driven to create scalable web applications that serve millions of users, delivering
+                exceptional UI/UX through responsive, performant interfaces that make people's lives more
+                efficient and enjoyable.
               </p>
               <a
                 rel="noreferrer"
